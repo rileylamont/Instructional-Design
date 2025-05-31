@@ -144,6 +144,7 @@ footer p {
 .header-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   padding-bottom: 25px;
   padding-left: 25px;
@@ -310,3 +311,27 @@ details[open] > .details-content {
   background-color: #ffe9c3;
 }
 /* FAQ page */
+
+/* mobile stuff*/
+
+@media (max-width: 700px) {
+  .header-nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .nav-left,
+  .nav-right {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+  .nav-left a,
+  .nav-right a {
+    display: block;
+    width: 100%;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+    text-align: left;
+  }
+}
