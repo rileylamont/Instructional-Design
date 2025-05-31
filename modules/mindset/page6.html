@@ -38,23 +38,112 @@
 
         <div class="content-wrapper fade-in">
             <p style="text-align: center; font-size: 24px; text-decoration: none; color: black">Mindset</p>
-            asdfasdfasdf
+
+            <div style="font-size: 18px;">
+                <p>Research shows that reflecting on and writing down your thoughts can significantly improve your
+                    ability
+                    to remember and
+                    apply what you have learned. Take a few minutes to thoughtfully respond to the prompts below to get
+                    the
+                    most out of this module.</p>
+
+                <p><strong>1. Why is it important to be aware of
+                        your thoughts?</strong></p>
+
+                <p><strong>2. When you observe a negative thought, how should you respond?</strong></p>
+
+                <p><strong>3. What are the potential consequences of maintaining a negative mindset?</strong></p>
+
+                <br>
+
+
+
+
+                <div class="response-box">
+                    <label for="response1">
+                        <p>Write your response below:</p>
+                    </label>
+                    <textarea id="response1" rows="6" placeholder="Type your thoughts here"></textarea>
+                    <div class="char-count" id="charCount1">0 / 1000 characters</div>
+                </div>
+
+            </div>
+
+
 
 
 
         </div>
+
+
+
+
+
+
+
+        <style>
+            .response-box {
+                margin: 20px auto;
+                background-color: #00000000;
+            }
+
+            textarea {
+                width: 100%;
+                height: 250px;
+                padding: 12px;
+                font-size: 18px;
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 8px;
+                border: 1px solid #000000;
+                resize: vertical;
+                box-sizing: border-box;
+                background-color: #00000000;
+                line-height: 1.6;
+            }
+
+            .char-count {
+                text-align: right;
+                color: #252525;
+                margin-top: 5px;
+            }
+        </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            const textarea = document.getElementById('response1');
+            const charCount = document.getElementById('charCount1');
+
+            textarea.addEventListener('input', () => {
+
+                charCount.textContent = `${textarea.value.length} / 1000 characters`;
+            });
+
+
+        </script>
+
+
+
+
+
+
+
         <a href="page1.html" style="top: 150px; " class="module-button fade-in">Introduction</a>
         <a href="page2.html" style="top: 200px;" class="module-button">Learn</a>
         <a href="page3.html" style="top: 250px;" class="module-button">Relate</a>
         <a href="page4.html" style=" top: 300px;" class="module-button">Apply</a>
         <a href="page5.html" style=" top: 350px;" class="module-button">Assess</a>
         <a href="page6.html" style="width: 120px; border: 1px solid #000; top: 400px;" class="module-button">Reflect</a>
-
-
-
-
-
-
 
         <footer>
             <p>&copy; 2025, Riley L. Peterson
