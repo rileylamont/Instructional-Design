@@ -137,137 +137,6 @@
 
 
 
-            <style>
-                .quiz-container {
-                    max-width: 500px;
-                    margin: 20px auto;
-                }
-
-                .answer-grid {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    gap: 15px;
-                    margin-bottom: 15px;
-                }
-
-                .answer-box {
-                    border: 2px solid #aaa;
-                    padding: 15px;
-                    border-radius: 10px;
-                    text-align: center;
-                    cursor: pointer;
-
-                    transition: background-color .2s, border-color .2s;
-                    user-select: none;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-
-                .answer-box:hover {
-                    background-color: #f0f0f0;
-                }
-
-                .answer-box input[type="radio"] {
-                    display: none;
-                }
-
-
-                .answer-box.selected {
-                    background-color: #ffffff;
-                    border-color: #aaa;
-                }
-
-                .feedback {
-                    display: none;
-                    border: 2px solid #aaa;
-                    padding: 15px;
-                    border-radius: 10px;
-                    text-align: center;
-                }
-            </style>
-
-
-            <script>
-                const correctAnswer = {
-                    q1: {
-                        Belief: "Correct!",
-                        Thought: "Try Again!",
-                        Action: "Not Quite!",
-                        Reaction: "No"
-                    },
-                    q2: {
-                        True: "Correct!",
-                        False: "Try Again!"
-                    },
-                    q3: {
-                        q31: "Incorrect",
-                        q32: "Try Again!",
-                        q33: "Correct!",
-                        q34: "Incorrect"
-                    },
-
-                    q5: {
-                        q51: "Incorrect",
-                        q52: "Try Again!",
-                        q53: "Try Again!",
-                        q54: "Correct!"
-                    }
-
-                };
-
-                document.querySelectorAll('.quizForm').forEach((form) => {
-                    const feedback = form.parentElement.querySelector('.feedback');
-
-                    // Add the label click/change handlers ONCE per form
-                    const labels = form.querySelectorAll('.answer-box');
-                    labels.forEach(label => {
-                        const input = label.querySelector('input[type="radio"]');
-                        input.addEventListener('change', () => {
-                            // Remove 'selected' class from all labels
-                            labels.forEach(l => l.classList.remove('selected'));
-                            // Add 'selected' class to the label of the checked input
-                            if (input.checked) {
-                                label.classList.add('selected');
-                            }
-                        });
-                    });
-
-                    // Listen for change on the whole form to update feedback
-                    form.addEventListener('change', function () {
-                        const checked = form.querySelector('input[type="radio"]:checked');
-                        if (!checked) {
-                            feedback.textContent = "Please select an answer.";
-                            feedback.style.color = "orange";
-                            return;
-                        }
-
-                        const qName = checked.name;
-                        const userAnswer = checked.value;
-
-                        // Show custom message
-                        const message = correctAnswer[qName][userAnswer];
-                        feedback.textContent = message;
-                        feedback.style.display = "block";
-                        feedback.style.color = "black";
-
-                        // Optional: color feedback depending on message
-                        if (message.includes("Correct!")) {
-                            feedback.style.backgroundColor = "#d0f0c0";
-                        }
-                        else {
-                            feedback.style.backgroundColor = "#ffd6d6";
-                        }
-                    });
-
-
-                });
-            </script>
-
-
-
-
-
 
 
 
@@ -300,6 +169,11 @@
 
 
 
+
+        <div class="prevnext-container content-wrapper fade-in">
+            <a class="prevnext" href="page4.html">Previous</a>
+            <a class="prevnext" href="page6.html">Next</a>
+        </div>
         <footer>
             <p>&copy; 2025, Riley L. Peterson
                 <span class="footer-extra">Privacy Policy</span>
