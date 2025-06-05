@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructional Design Project</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <script src="../../main.js"></script>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class=>
+    <div class="main-container">
+        <header>
+            <p style="text-align: center;"><a href="index.html"
+                    style="font-size: 30px;  text-decoration: none; color: black">Cultivating Work
+                    Ethic: A Scientific Approach</a>
+            </p>
+            <nav class="header-nav">
+                <div class="nav-left">
+                    <a href="../../index.html">Home</a>
+                    <a href="../../modules/modules.html">Modules</a>
+                    <a href="../../forums/forums.html">Forums</a>
+                    <a href="../../resources/resources.html">Resources</a>
+                </div>
+                <div class="nav-right">
+                    <a href="../../about/about.html">About</a>
+                    <a href="../../contact/contact.html">Contact</a>
+                    <a href="../../faq/faq.html">FAQ</a>
+                </div>
+            </nav>
+        </header>
+
+        <div class="content-wrapper fade-in">
+            <p style="text-align: center; font-size: 24px; text-decoration: none; color: black">Uproot</p>
+
+
+            <div style="font-size: 18px;">
+                <p>Research shows that reflecting on and writing down your thoughts can significantly improve your
+                    ability
+                    to remember and
+                    apply what you have learned. Take a few minutes to thoughtfully respond to the prompts below to get
+                    the
+                    most out of this module.</p>
+
+                <p><strong>1. What will happen if I never learn to regulate negative emotions?</strong></p>
+
+                <p><strong>2. When I observe negative emotions, what actions can I take?</strong></p>
+
+                <p><strong>3. How will I recognize a negatvie emotion?</strong></p>
+
+                <br>
+
+
+
+
+                <div class="response-box">
+                    <label for="response1">
+                        <p>Write your response below:</p>
+                    </label>
+                    <textarea id="response1" rows="6" placeholder="Type your thoughts here"></textarea>
+                    <div class="char-count" id="charCount1">0 / 1000 characters</div>
+                </div>
+            </div>
+            <br>
+            <p style="font-size: 24px; border-top: 1px solid #222; padding-top: 50px;">Closing Statement</p>
+            <video style="border-radius: 8px;" width="100%" height="56%" controls>
+            </video>
+            <br><br>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script>
+            const textarea = document.getElementById('response1');
+            const charCount = document.getElementById('charCount1');
+
+            textarea.addEventListener('input', () => {
+
+                charCount.textContent = `${textarea.value.length} / 1000 characters`;
+            });
+
+
+        </script>
+
+
+
+
+
+    </div>
+    <a href="page1.html" style="top: 150px; " class="module-button fade-in">Introduction</a>
+    <a href="page2.html" style="top: 200px;" class="module-button">Learn</a>
+    <a href="page3.html" style="top: 250px;" class="module-button">Relate</a>
+    <a href="page4.html" style=" top: 300px;" class="module-button">Apply</a>
+    <a href="page5.html" style=" top: 350px;" class="module-button">Assess</a>
+    <a href="page6.html" style="width: 120px; border: 1px solid #000; top: 400px;" class="module-button">Reflect</a>
+
+
+
+
+
+    <div class="prevnext-container content-wrapper">
+        <a class="prevnext" href="page5.html">Previous</a>
+        <a class="prevnext" href="../modules.html">Modules</a>
+    </div>
+
+
+    <footer>
+        <p>&copy; 2025, Riley L. Peterson
+            <span class="footer-extra">Privacy Policy</span>
+            <span class="footer-extra">Terms of Service</span>
+        </p>
+    </footer>
+    </div>
+</body>
+
+</html>
