@@ -84,6 +84,76 @@ document.addEventListener("DOMContentLoaded", function () {
       q253: "I Don't Think So!",
       q254: "Correct!",
     },
+
+    q31: {
+      q311: "Try Again!",
+      q312: "Correct!",
+      q313: "I don't think so!",
+      q314: "Incorrect!",
+    },
+
+    q32: {
+      q321: "Try Again!",
+      q322: "Correct!",
+      q323: "Nope!",
+      q324: "Incorrect!",
+    },
+
+    q33: {
+      q331: "Incorrect",
+      q332: "Correct!",
+      q333: "Try Again!",
+      q334: "I Don't Think So!",
+    },
+    q34: {
+      q341: "Try Again!",
+      q342: "I Don't Think So!",
+      q343: "Correct!",
+      q344: "Incorrect!",
+    },
+    q35: {
+      q351: "Incorrect",
+      q352: "Try Again!",
+      q353: "I Don't Think So!",
+      q354: "Correct!",
+    },
+
+    q41: {
+      q411: "Try Again!",
+      q412: "I don't think so!",
+      q413: "Correct!",
+      q414: "Incorrect!",
+    },
+
+    q42: {
+      q421: "Try Again!",
+      q422: "Nope!",
+      q423: "Correct!",
+      q424: "Incorrect!",
+    },
+
+    q43: {
+      q431: "Incorrect",
+      q432: "Correct!",
+      q433: "Try Again!",
+      q434: "I Don't Think So!",
+    },
+    q44: {
+      q441: "Try Again!",
+      q442: "Correct!",
+      q443: "I Don't Think So!",
+      q444: "Incorrect!",
+    },
+    q45: {
+      q451: "Incorrect",
+      q452: "Try Again!",
+      q453: "I Don't Think So!",
+      q454: "Correct!",
+    },
+
+    q5: {
+      q51: "Thank you for your taking my course!",
+    },
   };
 
   document.querySelectorAll(".quizForm").forEach((form) => {
@@ -120,6 +190,8 @@ document.addEventListener("DOMContentLoaded", function () {
       feedback.style.color = "black";
       if (message.includes("Correct!")) {
         feedback.style.backgroundColor = "#d0f0c0";
+      } else if (message.includes("Thank")) {
+        feedback.style.backgroundColor = "#fff";
       } else {
         feedback.style.backgroundColor = "#ffd6d6";
       }

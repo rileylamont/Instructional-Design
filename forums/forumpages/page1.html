@@ -38,21 +38,26 @@
 
         <div class="content-wrapper fade-in">
             <p style="text-align: center; font-size: 24px; text-decoration: none; color: black">Course Feedback</p>
-            <p> Course feedback will go here.
-                Links on the right side of page currently not working :(</p>
+            <p style="font-size: 20px;">Let us know how we did! <br>(this currently does not submit anything. Please
+                send
+                feedback to
+                rlpeterson4@liberty.edu) thanks!!</p>
 
 
-
-
+            <div class="response-box">
+                <label for="response1">
+                    <p>Write your response below:</p>
+                </label>
+                <textarea id="response1" rows="6" placeholder="Type your thoughts here"></textarea>
+                <div class="char-count" id="charCount1">0 / 1000 characters</div>
+            </div>
         </div>
-        <a href="page1.html" style="width: 160px; border: 1px solid #000; top: 150px; "
-            class="module-button fade-in">Course Feedback</a>
+        <br>
 
-        <a href="page2.html" style="width:130px; top: 200px;" class="module-button">Mindset Forum</a>
-        <a href="page3.html" style="width:130px; top: 250px;" class="module-button">Emotion Forum</a>
-        <a href="page4.html" style="width:130px; top: 300px;" class="module-button">Focus Forum</a>
-        <a href="page5.html" style="width:130px; top: 350px;" class="module-button">Uproot Forum</a>
+        <br><br>
 
+
+    </div>
 
 
 
@@ -60,12 +65,48 @@
 
 
 
-        <footer>
-            <p>&copy; 2025, Riley L. Peterson
-                <span class="footer-extra">Privacy Policy</span>
-                <span class="footer-extra">Terms of Service</span>
-            </p>
-        </footer>
+
+
+
+
+
+
+
+    <script>
+        const textarea = document.getElementById('response1');
+        const charCount = document.getElementById('charCount1');
+
+        textarea.addEventListener('input', () => {
+
+            charCount.textContent = `${textarea.value.length} / 1000 characters`;
+        });
+
+
+    </script>
+
+
+
+
+
+
+    </div>
+    <a href="page1.html" style="width: 160px; border: 1px solid #000; top: 150px; " class="module-button fade-in">Course
+        Feedback</a>
+
+    <a href="../../modules/mindset/page6.html" style="width:130px; top: 200px;" class="module-button">Mindset Forum</a>
+    <a href="../../modules/emotion/page6.html" style="width:130px; top: 250px;" class="module-button">Emotion Forum</a>
+    <a href="../../modules/focus/page6.html" style="width:130px; top: 300px;" class="module-button">Focus Forum</a>
+    <a href="../../modules/uproot/page6.html" style="width:130px; top: 350px;" class="module-button">Pride Forum</a>
+
+
+
+
+    <footer>
+        <p>&copy; 2025, Riley L. Peterson
+            <span class="footer-extra">Privacy Policy</span>
+            <span class="footer-extra">Terms of Service</span>
+        </p>
+    </footer>
     </div>
 </body>
 
